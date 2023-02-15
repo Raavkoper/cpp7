@@ -1,7 +1,7 @@
 #include "iter.hpp"
 
 template<typename T>
-void print_element(T element) {
+const void print_element(T element) {
 	std::cout << element << std::endl;
 }
 
@@ -10,5 +10,5 @@ int main(void) {
 	std::string stringarray[4] = {"what's", "poppin", "my", "guy"};
 
 	::iter(intarray, 10, print_element);
-	::iter(stringarray, 6, print_element);
+	::iter(stringarray, 4, print_element);
 }
